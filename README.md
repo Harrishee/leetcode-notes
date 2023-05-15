@@ -1,35 +1,55 @@
+
 # [刷题笔记 Overview](README.md)
 
-# 需要学：
-高频：宽度优先搜索（BFS），深度优先搜索（DFS），二分法（Binary Search），双指针（2 Pointer），堆、栈、队列、哈希表（Heap，Stack，Heap，HashMap），链表（LinkedList），二叉树（Binary Tree），二叉搜索树（Binary Search Tree），前缀和（Prefix Sum），快速排序与归并排序（Quick Sort/ Merge Sort）
+# 主题：
+- 高频：
+    - 宽度优先搜索（BFS）
+    - 深度优先搜索（DFS）
+    - 二分法（Binary Search）
+    - 双指针（2 Pointer）
+    - 堆、栈、队列、哈希表（Heap，Stack，Heap，HashMap）
+    - 链表（LinkedList）
+    - 二叉树（Binary Tree）
+    - 二叉搜索树（Binary Search Tree）
+    - 前缀和（Prefix Sum）
+    - 快速排序与归并排序（Quick Sort/ Merge Sort）
 
-中频：动态规划（DP），扫描线（Sweep Line），字典树（Trie），并查集（Union Find），单调栈与单调队列（Monotone Stack/ Queue），TreeMap等
+- 中频：
+    - 动态规划（DP）
+    - 字典树（Trie）
+    - 并查集（Union Find）
+    - 位运算（Bit Manipulation）
+    - 单调栈与单调队列（Monotone Stack/ Queue）
+    - 扫描线（Sweep Line）
+    - TreeMap
+
+<br>
 
 # [基础](基础.md)
 
-#### 思想
+### 思想
 * 排序
-* 二分（显式二分法，隐式二分法）（左闭右闭，左闭右开）
+* 二分（显式二分法，隐式二分法：左闭右闭，左闭右开）
 * 双指针（同向双指针，相向双指针）
 * 单调栈 / 单调队列
 * heap
 * 前缀和
 
-#### 链表
+### 链表
 * 基础操作（**快慢指针，反转链表，虚拟头节点**）
 * 排序、插入、删除、反转、合并，需要在脑里抽象出来节点操作的样子
 
-#### 二叉树
+### 二叉树
 * 基础操作（前中后序遍历）
 * 层序遍历（需要记录层数或者不需要记录层数）
 * 迭代写法
 * 完全二叉树，BST特性
 
-#### 回溯
+### 回溯
 * 回溯类型（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
 * 记忆化
 
-#### 图
+### 图
 * 简单图 dfs
 * 简单图 bfs（需要或者不需要记录层数）（最短路径长度，注意是长度而不是具体的路径）（多源bfs）
 * 隐式图 word xxx 一般bfs/双向bfs
@@ -38,20 +58,17 @@
 * 权重图 最短路径
 * 最小生成树
 
-#### 动态规划
+### 动态规划
 * 一维dp
 * 二维dp
 
-#### 树
+### 树
 * 前缀树
 * 并查集
 
----
+<br>
 
 # [链表](链表.md)
-
-#### 练习
-
 1. [设计链表](链表.md#设计链表) [707](https://leetcode-cn.com/problems/design-linked-list)
 2. [LRU缓存](链表.md#LRU缓存) [146](https://leetcode-cn.com/problems/lru-cache/)
 3. [链表排序](链表.md#链表排序) [148](https://leetcode-cn.com/problems/sort-list)
@@ -69,12 +86,10 @@
 15. [分隔链表](链表.md#分隔链表) [86](https://leetcode-cn.com/problems/partition-list) TODO 原地修改
 16. [从链表中删去总和值为零的连续节点](链表.md#从链表中删去总和值为零的连续节点) [1171](https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list) TODO
 
----
+<br>
 
 # [二叉树](二叉树.md)
-
-#### 二叉树属性
-
+### 二叉树属性
 1. [是否对称](二叉树.md#是否对称) [101](https://leetcode-cn.com/problems/symmetric-tree)
 2. [最大深度](二叉树.md#最大深度) [104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)
 3. [最小深度](二叉树.md#最小深度) [111](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)
@@ -84,8 +99,7 @@
 7. [二叉树的坡度](二叉树.md#二叉树的坡度) [563](https://leetcode-cn.com/problems/binary-tree-tilt)
 8. [完全二叉节点数量](二叉树.md#完全二叉节点数量) [222](https://leetcode-cn.com/problems/count-complete-tree-nodes) REVIEW
 
-#### 二叉树操作和遍历
-
+### 二叉树操作和遍历
 1. [所有路径](二叉树.md#所有路径) [257](https://leetcode-cn.com/problems/binary-tree-paths)
 2. [路径总和](二叉树.md#路径总和) [112](https://leetcode-cn.com/problems/path-sum)
 3. [路径总和II](二叉树.md#路径总和2) [113](https://leetcode-cn.com/problems/path-sum-ii)
@@ -97,14 +111,12 @@
 9. [另一棵树的子树](二叉树.md#另一棵树的子树) [572](https://leetcode-cn.com/problems/subtree-of-another-tree)
 10. [二叉树的最近公共祖先](二叉树.md#二叉树的最近公共祖先) [236](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-tree)
 
-#### BST属性
-
+### BST属性
 1. [二叉搜索树的最小绝对差](二叉树.md#二叉搜索树的最小绝对差) [530](https://leetcode-cn.com/problems/minimum-absolute-difference-in-bst)
 2. [二叉搜索树中的众数](二叉树.md#二叉搜索树中的众数) [501](https://leetcode-cn.com/problems/find-mode-in-binary-search-tree)
 3. [二叉搜索树中第K小的元素](二叉树.md#二叉搜索树中第K小的元素) [230](https://leetcode-cn.com/problems/kth-smallest-element-in-a-bst)
 
-#### BST操作和遍历
-
+### BST操作和遍历
 1. [二叉搜索树中的搜索](二叉树.md#二叉搜索树中的搜索) [700](https://leetcode-cn.com/problems/search-in-a-binary-search-tree)
 2. [二叉搜索树的插入操作](二叉树.md#二叉搜索树的插入操作) [701](https://leetcode-cn.com/problems/insert-into-a-binary-search-tree)
 3. [二叉搜索树的删除](二叉树.md#二叉搜索树的删除) [450](https://leetcode-cn.com/problems/delete-node-in-a-bst)
@@ -113,8 +125,7 @@
 6. [把二叉搜索树转换为累加树](二叉树.md#把二叉搜索树转换为累加树) [538](https://leetcode-cn.com/problems/convert-bst-to-greater-tree)
 7. [二叉搜索树的最近公共祖先](二叉树.md#二叉搜索树的最近公共祖先) [235](https://leetcode-cn.com/problems/lowest-common-ancestor-of-a-binary-search-tree)
 
-#### 二叉树构造
-
+### 二叉树构造
 1. [最大二叉树](二叉树.md#最大二叉树) [654](https://leetcode-cn.com/problems/maximum-binary-tree)
 2. [前序中序构造二叉树](二叉树.md#前序中序构造二叉树) [105](https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal)
 3. [中序后序构造二叉树](二叉树.md#中序后序构造二叉树) [106](https://leetcode-cn.com/problems/construct-binary-tree-from-inorder-and-postorder-traversal)
@@ -123,12 +134,10 @@
 6. [序列化和反序列化二叉搜索树](二叉树.md#序列化和反序列化二叉搜索树) [449](https://leetcode-cn.com/problems/serialize-and-deserialize-bst) TODO
 7. [二叉树的序列化与反序列化](二叉树.md#二叉树的序列化与反序列化) [297](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree) TODO
 
----
+<br>
 
 # [回溯算法](回溯.md)
-
-#### 子集组合排列问题
-
+### 子集组合排列问题
 1. [子集](回溯.md#子集) [78](https://leetcode-cn.com/problems/subsets)
 2. [子集 II](回溯.md#子集-ii) [90](https://leetcode-cn.com/problems/subsets-ii)
 
@@ -144,27 +153,22 @@
 10. [分割回文串](回溯.md#分割回文串) [131](https://leetcode-cn.com/problems/palindrome-partitioning)
 11. [复原IP地址](回溯.md#复原ip地址) [93](https://leetcode-cn.com/problems/restore-ip-addresses)
 
-#### 棋盘问题
-
+### 棋盘问题
 1. [N皇后](回溯.md#n皇后) [51](https://leetcode-cn.com/problems/n-queens)
 2. [解数独](回溯.md#解数独) [37](https://leetcode-cn.com/problems/sudoku-solver)
 
-#### 其他
-
+### 其他
 1. [递增子序列](回溯.md#递增子序列) [491](https://leetcode-cn.com/problems/increasing-subsequences) TODO
 2. [重新安排行程](回溯.md#重新安排行程) [331](https://leetcode-cn.com/problems/reconstruct-itinerary) TODO
 
----
+<br>
 
 # [图论](图论.md)
-
-#### BFS基本操作
-
-节点操作
+### BFS 节点操作
 1. [墙与门](图论.md#墙与门) [286](https://leetcode-cn.com/problems/walls-and-gates)
 2. [岛屿数量](图论.md#岛屿数量) [200](https://leetcode-cn.com/problems/number-of-islands)
 
-BFS到终点最小层数
+### BFS 到终点最小层数
 1. [进击的骑士](图论.md#进击的骑士) [1197](https://leetcode-cn.com/problems/minimum-knight-moves)
 2. [获取食物的最短路径](图论.md#获取食物的最短路径) [1730](https://leetcode-cn.com/problems/shortest-path-to-get-food)
 3. [迷宫中离入口最近的出口](图论.md#迷宫中离入口最近的出口) [1926](https://leetcode-cn.com/problems/nearest-exit-from-entrance-in-maze)
@@ -172,32 +176,27 @@ BFS到终点最小层数
 5. [迷宫](图论.md#迷宫) [490](https://leetcode-cn.com/problems/the-maze)
 6. [迷宫 II](图论.md#迷宫-ii) [505](https://leetcode-cn.com/problems/the-maze-ii)
 
-多源BFS
+### 多源 BFS
 1. [01 矩阵](图论.md#01矩阵) [542](https://leetcode-cn.com/problems/01-matrix)
 2. [太平洋大西洋水流问题](图论.md#太平洋大西洋水流问题) [417](https://leetcode-cn.com/problems/pacific-atlantic-water-flow)
 
-隐式BFS
+### 隐式 BFS
 1. [单词接龙](图论.md#单词接龙) [127](https://leetcode-cn.com/problems/word-ladder)
 2. [打开转盘锁](图论.md#打开转盘锁) [752](https://leetcode-cn.com/problems/open-the-lock)
     
-#### DFS基本操作
-
+### DFS基本操作
 DFS到遍历到特定终点
 1. [迷宫](图论.md#迷宫dfs) [490](https://leetcode-cn.com/problems/the-maze)
 
-#### 拓扑排序
-
+### 拓扑排序
 返回值：是否可排序 / 排序后的数组 / 拓扑层数
-
 1. [课程表](图论.md#课程表) [207](https://leetcode-cn.com/problems/course-schedule)
 2. [课程表 II](图论.md#课程表-ii) [210](https://leetcode-cn.com/problems/course-schedule-ii)
 
----
+<br>
 
 # [动态规划](动规.md)
-
-#### 基础题目
-
+### 基础题目
 1. [斐波那契数列](动规.md#斐波那契数列) [509](https://leetcode-cn.com/problems/fibonacci-number)
 2. [爬楼梯](动规.md#爬楼梯) [70](https://leetcode-cn.com/problems/climbing-stairs)
 3. [使用最小花费爬楼梯](动规.md#使用最小花费爬楼梯) [746](https://leetcode-cn.com/problems/min-cost-climbing-stairs)
@@ -205,19 +204,19 @@ DFS到遍历到特定终点
 5. [不同路径 II](动规.md#不同路径-ii) [63](https://leetcode-cn.com/problems/unique-paths-ii)
 6. [整数拆分](动规.md#整数拆分) [343](https://leetcode-cn.com/problems/integer-break)
 
-#### 背包问题
-
+### 背包问题
 0/1背包
+1. [分割等和子集](动规.md#分割等和子集) [416](https://leetcode-cn.com/problems/partition-equal-subset-sum)
 
 完全背包
 
 多重背包
 
-#### 打家劫舍
+### 打家劫舍
 
-#### 股票问题
+### 股票问题
 
-#### 子序列问题
+### 子序列问题
 
 不连续子序列
 
@@ -227,7 +226,7 @@ DFS到遍历到特定终点
 
 回文
 
----
+<br>
 
 # [刷题杂记](README.md)
 
