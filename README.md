@@ -1,7 +1,7 @@
 
 # [刷题笔记 Overview](README.md)
 
-# 主题：
+# 主题
 - 高频：
     - 宽度优先搜索（BFS）
     - 深度优先搜索（DFS）
@@ -71,7 +71,7 @@
 # [链表](链表.md)
 1. [设计链表](链表.md#设计链表) [707](https://leetcode-cn.com/problems/design-linked-list)
 2. [LRU缓存](链表.md#LRU缓存) [146](https://leetcode-cn.com/problems/lru-cache/)
-3. [链表排序](链表.md#链表排序) [148](https://leetcode-cn.com/problems/sort-list)
+3. [链表排序](链表.md#链表排序) [148](https://leetcode-cn.com/problems/sort-list) merge sort
 4. [反转链表 II](链表.md#反转链表-ii) [92](https://leetcode.cn/problems/reverse-linked-list-ii)
 5. [奇偶链表](链表.md#奇偶链表) [328](https://leetcode-cn.com/problems/odd-even-linked-list)
 6. [链表相交](链表.md#链表相交) [160](https://leetcode-cn.com/problems/intersection-of-two-linked-lists)
@@ -83,8 +83,8 @@
 12. [合并 K 个升序链表](链表.md#合并-k-个升序链表) [23](https://leetcode-cn.com/problems/merge-k-sorted-lists) heapq
 13. [旋转链表](链表.md#旋转链表) [61](https://leetcode-cn.com/problems/rotate-list)
 14. [复制带随机指针的链表](链表.md#复制带随机指针的链表) [138](https://leetcode-cn.com/problems/copy-list-with-random-pointer)
-15. [分隔链表](链表.md#分隔链表) [86](https://leetcode-cn.com/problems/partition-list) TODO 原地修改
-16. [从链表中删去总和值为零的连续节点](链表.md#从链表中删去总和值为零的连续节点) [1171](https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list) TODO
+15. [分隔链表](链表.md#分隔链表) [86](https://leetcode-cn.com/problems/partition-list)
+16. [从链表中删去总和值为零的连续节点](链表.md#从链表中删去总和值为零的连续节点) [1171](https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)
 
 <br>
 
