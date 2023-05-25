@@ -29,38 +29,46 @@
 
 ### 思想
 * 排序
-* 二分（显式二分法，隐式二分法：左闭右闭，左闭右开）
-* 双指针（同向双指针，相向双指针）
+* 二分: `显式二分法，隐式二分法：左闭右闭，左闭右开`
+* 双指针: `同向双指针，相向双指针`
 * 单调栈 / 单调队列
-* heap
+* heapq
 * 前缀和
 
 ### 链表
-* 基础操作（**快慢指针，反转链表，虚拟头节点**）
+* 基础操作: `快慢指针，反转链表，虚拟头节点`
 * 排序、插入、删除、反转、合并，需要在脑里抽象出来节点操作的样子
 
 ### 二叉树
-* 基础操作（前中后序遍历）
-* 层序遍历（需要记录层数或者不需要记录层数）
+* 基础操作: `前中后序遍历`
+* 层序遍历: `需要记录层数或者不需要记录层数`
 * 迭代写法
 * 完全二叉树，BST特性
 
 ### 回溯
-* 回溯类型（需要记录路径，不需要返回值 and 不需要记录路径，但需要记录某些特征的返回值）
-* 记忆化
+* 回溯类型: 
+    - `需要记录路径，不需要返回值`
+    - `不需要记录路径，但需要记录某些特征的返回值`
+* 记忆化搜索
 
 ### 图
 * 简单图 dfs
-* 简单图 bfs（需要或者不需要记录层数）（最短路径长度，注意是长度而不是具体的路径）（多源bfs）
-* 隐式图 word xxx 一般bfs/双向bfs
+* 简单图 bfs:
+    - `需要或者不需要记录层数`
+    - `最短路径长度，注意是长度而不是具体的路径`
+    - `多源bfs`
+* 隐式图 word xxx `一般bfs / 双向bfs`
 * 有向图 自己构造
-* topology
+* Topology: `返回值：是否可排序 / 排序后的数组 / 拓扑层数`
 * 权重图 最短路径
 * 最小生成树
 
 ### 动态规划
-* 一维dp
-* 二维dp
+* 01背包: `滚动数组优化`
+* 完全背包
+* 打家劫舍
+* 股票问题
+* 子序列问题
 
 ### 树
 * 前缀树
@@ -93,17 +101,17 @@
 1. [是否对称](二叉树.md#是否对称) [101](https://leetcode-cn.com/problems/symmetric-tree)
 2. [最大深度](二叉树.md#最大深度) [104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)
 3. [最小深度](二叉树.md#最小深度) [111](https://leetcode-cn.com/problems/minimum-depth-of-binary-tree)
-4. [最大宽度](二叉树.md#二叉树的最大宽度) [662](https://leetcode-cn.com/problems/maximum-width-of-binary-tree) REVIEW
+4. [最大宽度](二叉树.md#二叉树的最大宽度) [662](https://leetcode-cn.com/problems/maximum-width-of-binary-tree) 二叉树性质
 5. [平衡二叉树](二叉树.md#平衡二叉树) [110](https://leetcode-cn.com/problems/balanced-binary-tree)
 6. [二叉树的直径](二叉树.md#二叉树的直径) [543](https://leetcode-cn.com/problems/diameter-of-binary-tree)
 7. [二叉树的坡度](二叉树.md#二叉树的坡度) [563](https://leetcode-cn.com/problems/binary-tree-tilt)
-8. [完全二叉节点数量](二叉树.md#完全二叉节点数量) [222](https://leetcode-cn.com/problems/count-complete-tree-nodes) REVIEW
+8. [完全二叉节点数量](二叉树.md#完全二叉节点数量) [222](https://leetcode-cn.com/problems/count-complete-tree-nodes) 二叉树性质
 
 ### 二叉树操作和遍历
-1. [所有路径](二叉树.md#所有路径) [257](https://leetcode-cn.com/problems/binary-tree-paths)
+1. [根到叶路径上的不足节点](二叉树.md#根到叶路径上的不足节点) [1080](https://leetcode-cn.com/problems/insufficient-nodes-in-root-to-leaf-paths)
 2. [路径总和](二叉树.md#路径总和) [112](https://leetcode-cn.com/problems/path-sum)
 3. [路径总和II](二叉树.md#路径总和2) [113](https://leetcode-cn.com/problems/path-sum-ii)
-4. [二叉树中的最大路径和](二叉树.md#二叉树中的最大路径和) [124](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum) TODO
+4. [二叉树中的最大路径和](二叉树.md#二叉树中的最大路径和) [124](https://leetcode-cn.com/problems/binary-tree-maximum-path-sum)
 5. [翻转二叉树](二叉树.md#翻转二叉树) [226](https://leetcode-cn.com/problems/invert-binary-tree)
 6. [合并二叉树](二叉树.md#合并二叉树) [617](https://leetcode-cn.com/problems/merge-two-binary-trees)
 7. [树左下角值](二叉树.md#树左下角值) [513](https://leetcode-cn.com/problems/find-bottom-left-tree-value)
@@ -167,6 +175,7 @@
 ### BFS 节点操作
 1. [墙与门](图论.md#墙与门) [286](https://leetcode-cn.com/problems/walls-and-gates)
 2. [岛屿数量](图论.md#岛屿数量) [200](https://leetcode-cn.com/problems/number-of-islands)
+3. [克隆图](图论.md#克隆图) [133](https://leetcode-cn.com/problems/clone-graph)
 
 ### BFS 到终点最小层数
 1. [进击的骑士](图论.md#进击的骑士) [1197](https://leetcode-cn.com/problems/minimum-knight-moves)
@@ -183,13 +192,14 @@
 ### 隐式 BFS
 1. [单词接龙](图论.md#单词接龙) [127](https://leetcode-cn.com/problems/word-ladder)
 2. [打开转盘锁](图论.md#打开转盘锁) [752](https://leetcode-cn.com/problems/open-the-lock)
+3. [单词接龙 II](图论.md#单词接龙-ii) [126](https://leetcode-cn.com/problems/word-ladder-ii) TODO
+4. [无向图中连通分量的数目](图论.md#无向图中连通分量的数目) [323](https://leetcode-cn.com/problems/number-of-connected-components-in-an-undirected-graph)
     
 ### DFS基本操作
-DFS到遍历到特定终点
 1. [迷宫](图论.md#迷宫dfs) [490](https://leetcode-cn.com/problems/the-maze)
+2. [所有可能的路径](图论.md#所有可能的路径) [797](https://leetcode-cn.com/problems/all-paths-from-source-to-target)
 
 ### 拓扑排序
-返回值：是否可排序 / 排序后的数组 / 拓扑层数
 1. [课程表](图论.md#课程表) [207](https://leetcode-cn.com/problems/course-schedule)
 2. [课程表 II](图论.md#课程表-ii) [210](https://leetcode-cn.com/problems/course-schedule-ii)
 
@@ -207,6 +217,7 @@ DFS到遍历到特定终点
 ### 背包问题
 0/1背包
 1. [分割等和子集](动规.md#分割等和子集) [416](https://leetcode-cn.com/problems/partition-equal-subset-sum)
+2. [最后一块石头的重量 II](动规.md#最后一块石头的重量-ii) [1049](https://leetcode-cn.com/problems/last-stone-weight-ii)
 
 完全背包
 
