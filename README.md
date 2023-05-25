@@ -27,6 +27,8 @@
 
 # [基础](基础.md)
 
+Pracetice some basics in [Playground](playground/practice.py)
+
 ### 思想
 * 排序
 * 二分: `显式二分法，隐式二分法：左闭右闭，左闭右开`
