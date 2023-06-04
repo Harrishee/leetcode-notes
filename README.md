@@ -66,7 +66,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 * 最小生成树
 
 ### 动态规划
-* 01背包: `滚动数组优化`
+* 01背包: `滚动数组优化`, 组合类: `dp[j] += dp[j - nums[i]]`
 * 完全背包
 * 打家劫舍
 * 股票问题
@@ -144,6 +144,10 @@ Pracetice some basics in [Playground](playground/practice.py)
 6. [序列化和反序列化二叉搜索树](二叉树.md#序列化和反序列化二叉搜索树) [449](https://leetcode-cn.com/problems/serialize-and-deserialize-bst) TODO
 7. [二叉树的序列化与反序列化](二叉树.md#二叉树的序列化与反序列化) [297](https://leetcode-cn.com/problems/serialize-and-deserialize-binary-tree) TODO
 
+
+### 其他
+1. [删点成林](二叉树.md#删点成林) [1110](https://leetcode-cn.com/problems/delete-nodes-and-return-forest)
+
 <br>
 
 # [回溯算法](回溯.md)
@@ -170,6 +174,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 ### 其他
 1. [递增子序列](回溯.md#递增子序列) [491](https://leetcode-cn.com/problems/increasing-subsequences) TODO
 2. [重新安排行程](回溯.md#重新安排行程) [331](https://leetcode-cn.com/problems/reconstruct-itinerary) TODO
+3. [目标和](回溯.md#目标和) [494](https://leetcode-cn.com/problems/target-sum) memo / dp
 
 <br>
 
@@ -220,6 +225,8 @@ Pracetice some basics in [Playground](playground/practice.py)
 0/1背包
 1. [分割等和子集](动规.md#分割等和子集) [416](https://leetcode-cn.com/problems/partition-equal-subset-sum)
 2. [最后一块石头的重量 II](动规.md#最后一块石头的重量-ii) [1049](https://leetcode-cn.com/problems/last-stone-weight-ii)
+3. [目标和](动规.md#目标和) [494](https://leetcode-cn.com/problems/target-sum)
+4. [一和零](动规.md#一和零) [474](https://leetcode-cn.com/problems/ones-and-zeroes)
 
 完全背包
 

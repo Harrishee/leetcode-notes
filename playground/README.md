@@ -12,4 +12,6 @@ This is a playground for testing out the basic concepts:
 
 These exercises are best practiced regularly, and you can consolidate them all in the `practice.py` and test them out in the `test.py` file
 
+Run `python3 test.py` to test out the functions.
+
 Note: The testcases are not comprehensive. Better to test them out in Leetcode or other platforms.

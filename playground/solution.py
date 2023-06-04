@@ -217,15 +217,9 @@ class Solution:
     
 
     def knapsack_01_1d(self, bag_size, weight, value):
-        # dp[j]表示背包容量为j时，能装的最大价值
-        # bag_size + 1，因为背包容量为0时，价值为0
         dp = [0] * (bag_size + 1)
 
-        # 从后往前遍历，因为dp[j]依赖于dp[j-weight[i]]
-        # 先遍历物品，再遍历背包（大到小）
-        # (1, len(weight))，从1开始，因为dp[0] = 0，不需要更新
-        # (bag_size, weight[i] - 1, -1)，从bag_size开始，因为dp[bag_size]依赖于dp[bag_size-weight[i]]
-        for i in range(1, len(weight)):
+        for i in range(len(weight)):
             for j in range(bag_size, weight[i] - 1, -1):
                 dp[j] = max(dp[j], dp[j - weight[i]] + value[i])
         return dp[-1]
