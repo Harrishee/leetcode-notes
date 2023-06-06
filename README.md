@@ -23,11 +23,11 @@
     - 扫描线（Sweep Line）
     - TreeMap
 
-<br>
+---
 
 # [基础](基础.md)
 
-Pracetice some basics in [Playground](playground/practice.py)
+Pracetice some basics in the [Playground](playground/practice.py)
 
 ### 思想
 * 排序
@@ -66,8 +66,14 @@ Pracetice some basics in [Playground](playground/practice.py)
 * 最小生成树
 
 ### 动态规划
-* 01背包: `滚动数组优化`, 组合类: `dp[j] += dp[j - nums[i]]`
-* 完全背包
+* 01背包 - 每个物品用一次
+    - 2d: `dp[i][j] = max(dp[i - 1][j], dp[i - 1][j - w[i]] + v[i])`
+    - 1d: `dp[j] = max(dp[j], dp[j - w[i]] + v[i])` 内循环背包反向遍历
+    - 组合类: `dp[j] += dp[j - nums[i]]`
+* 完全背包 - 每个物品无限用
+    - 1d: `dp[j] = max(dp[j], dp[j - w[i]] + v[i])` 内循环背包正向遍历
+    - 求组合数: 外层for循环遍历物品，内层for遍历背包
+    - 求排列数: 外层for循环遍历背包，内层for遍历物品
 * 打家劫舍
 * 股票问题
 * 子序列问题
@@ -76,7 +82,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 * 前缀树
 * 并查集
 
-<br>
+---
 
 # [链表](链表.md)
 1. [设计链表](链表.md#设计链表) [707](https://leetcode-cn.com/problems/design-linked-list)
@@ -96,7 +102,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 15. [分隔链表](链表.md#分隔链表) [86](https://leetcode-cn.com/problems/partition-list)
 16. [从链表中删去总和值为零的连续节点](链表.md#从链表中删去总和值为零的连续节点) [1171](https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list)
 
-<br>
+---
 
 # [二叉树](二叉树.md)
 ### 二叉树属性
@@ -148,7 +154,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 ### 其他
 1. [删点成林](二叉树.md#删点成林) [1110](https://leetcode-cn.com/problems/delete-nodes-and-return-forest)
 
-<br>
+---
 
 # [回溯算法](回溯.md)
 ### 子集组合排列问题
@@ -175,8 +181,9 @@ Pracetice some basics in [Playground](playground/practice.py)
 1. [递增子序列](回溯.md#递增子序列) [491](https://leetcode-cn.com/problems/increasing-subsequences) TODO
 2. [重新安排行程](回溯.md#重新安排行程) [331](https://leetcode-cn.com/problems/reconstruct-itinerary) TODO
 3. [目标和](回溯.md#目标和) [494](https://leetcode-cn.com/problems/target-sum) memo / dp
+4. [单词拆分](回溯.md#单词拆分) [139](https://leetcode-cn.com/problems/word-break) memo / dp
 
-<br>
+---
 
 # [图论](图论.md)
 ### BFS 节点操作
@@ -210,7 +217,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 1. [课程表](图论.md#课程表) [207](https://leetcode-cn.com/problems/course-schedule)
 2. [课程表 II](图论.md#课程表-ii) [210](https://leetcode-cn.com/problems/course-schedule-ii)
 
-<br>
+---
 
 # [动态规划](动规.md)
 ### 基础题目
@@ -229,8 +236,12 @@ Pracetice some basics in [Playground](playground/practice.py)
 4. [一和零](动规.md#一和零) [474](https://leetcode-cn.com/problems/ones-and-zeroes)
 
 完全背包
-
-多重背包
+1. [零钱兑换 II](动规.md#零钱兑换ii) [518](https://leetcode.cn/problems/coin-change-ii/)
+2. [组合总和 IV](动规.md#组合总和iv) [377](https://leetcode-cn.com/problems/combination-sum-iv)
+3. [爬楼梯](动规.md#爬楼梯kp) [70](https://leetcode-cn.com/problems/climbing-stairs) 背包版本
+4. [零钱兑换](动规.md#零钱兑换kp) [322](https://leetcode-cn.com/problems/coin-change)
+5. [完全平方数](动规.md#完全平方数) [279](https://leetcode-cn.com/problems/perfect-squares)
+6. [单词拆分](动规.md#单词拆分) [139](https://leetcode-cn.com/problems/word-break) 记忆化 / dp
 
 ### 打家劫舍
 
@@ -246,7 +257,7 @@ Pracetice some basics in [Playground](playground/practice.py)
 
 回文
 
-<br>
+---
 
 # [刷题杂记](README.md)
 
@@ -266,25 +277,9 @@ Pracetice some basics in [Playground](playground/practice.py)
 
     * 前序+中序 / 中序+后序 确定一颗二叉树
 
-
-    * 知道动规是由前一个状态推导出来的，而贪心是局部直接选最优的，对于刷题来说就够用了
-
-    * 动态规划的核心是穷举，但是穷举不是原始的穷举，而是有选择的穷举
-
-    * 动态规划的穷举有点特别，因为这类问题存在「重叠子问题」，如果暴力穷举的话效率会极其低下，所以需要「备忘录」或者「DP table」来优化穷举过程，避免不必要的计算。
-
     * 动规五步曲：
         1. 确定dp数组（dp table）以及下标的含义
         2. 确定递推公式
         3. dp数组如何初始化
         4. 确定遍历顺序
         5. 举例推导dp数组
-
-## [贪心算法](贪心.md)
-
-#### 简单
-
-1. [发饼干](贪心.md#发饼干) [455](https://leetcode-cn.com/problems/assign-cookies)
-2. [K取反后最大化的数组和](贪心.md#k取反后最大化的数组和) [1005](https://leetcode-cn.com/problems/maximize-sum-of-array-after-k-negations)
-3. [跳跃游戏](贪心.md#跳跃游戏) [55](https://leetcode-cn.com/problems/jump-game)
-4. [跳跃游戏 II](贪心.md#跳跃游戏-ii) [45](https://leetcode-cn.com/problems/jump-game-ii)
