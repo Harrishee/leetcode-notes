@@ -2,6 +2,9 @@
 # [刷题笔记 Overview](README.md)
 
 # 主题
+
+Pracetice some basics in the [Playground](playground/practice.py)
+
 - 高频：
     - 宽度优先搜索（BFS）
     - 深度优先搜索（DFS）
@@ -26,9 +29,6 @@
 ---
 
 # [基础](基础.md)
-
-Pracetice some basics in the [Playground](playground/practice.py)
-
 ### 思想
 * 排序
 * 二分: `显式二分法，隐式二分法：左闭右闭，左闭右开`
@@ -51,7 +51,7 @@ Pracetice some basics in the [Playground](playground/practice.py)
 * 回溯类型: 
     - `需要记录路径，不需要返回值`
     - `不需要记录路径，但需要记录某些特征的返回值`
-* 记忆化搜索
+* 记忆化搜索: `需要返回值`
 
 ### 图
 * 简单图 dfs
@@ -78,13 +78,15 @@ Pracetice some basics in the [Playground](playground/practice.py)
 * 股票问题
 * 子序列问题
 
-### 树
-* 前缀树
-* 并查集
+### 其他
+* 树:
+    - 前缀树
+    - 并查集
+* 位运算
 
 ---
 
-# [链表](链表.md)
+# [1. 链表](链表.md)
 1. [设计链表](链表.md#设计链表) [707](https://leetcode-cn.com/problems/design-linked-list)
 2. [LRU缓存](链表.md#LRU缓存) [146](https://leetcode-cn.com/problems/lru-cache/)
 3. [链表排序](链表.md#链表排序) [148](https://leetcode-cn.com/problems/sort-list) merge sort
@@ -104,7 +106,7 @@ Pracetice some basics in the [Playground](playground/practice.py)
 
 ---
 
-# [二叉树](二叉树.md)
+# [2. 二叉树](二叉树.md)
 ### 二叉树属性
 1. [是否对称](二叉树.md#是否对称) [101](https://leetcode-cn.com/problems/symmetric-tree)
 2. [最大深度](二叉树.md#最大深度) [104](https://leetcode-cn.com/problems/maximum-depth-of-binary-tree)
@@ -156,7 +158,7 @@ Pracetice some basics in the [Playground](playground/practice.py)
 
 ---
 
-# [回溯算法](回溯.md)
+# [3. 回溯算法](回溯.md)
 ### 子集组合排列问题
 1. [子集](回溯.md#子集) [78](https://leetcode-cn.com/problems/subsets)
 2. [子集 II](回溯.md#子集-ii) [90](https://leetcode-cn.com/problems/subsets-ii)
@@ -185,7 +187,7 @@ Pracetice some basics in the [Playground](playground/practice.py)
 
 ---
 
-# [图论](图论.md)
+# [4. 图论](图论.md)
 ### BFS 节点操作
 1. [墙与门](图论.md#墙与门) [286](https://leetcode-cn.com/problems/walls-and-gates)
 2. [岛屿数量](图论.md#岛屿数量) [200](https://leetcode-cn.com/problems/number-of-islands)
@@ -219,7 +221,7 @@ Pracetice some basics in the [Playground](playground/practice.py)
 
 ---
 
-# [动态规划](动规.md)
+# [5. 动态规划](动规.md)
 ### 基础题目
 1. [斐波那契数列](动规.md#斐波那契数列) [509](https://leetcode-cn.com/problems/fibonacci-number)
 2. [爬楼梯](动规.md#爬楼梯) [70](https://leetcode-cn.com/problems/climbing-stairs)
@@ -239,23 +241,42 @@ Pracetice some basics in the [Playground](playground/practice.py)
 1. [零钱兑换 II](动规.md#零钱兑换ii) [518](https://leetcode.cn/problems/coin-change-ii/)
 2. [组合总和 IV](动规.md#组合总和iv) [377](https://leetcode-cn.com/problems/combination-sum-iv)
 3. [爬楼梯](动规.md#爬楼梯kp) [70](https://leetcode-cn.com/problems/climbing-stairs) 背包版本
-4. [零钱兑换](动规.md#零钱兑换kp) [322](https://leetcode-cn.com/problems/coin-change)
+4. [零钱兑换](动规.md#零钱兑换) [322](https://leetcode-cn.com/problems/coin-change)
 5. [完全平方数](动规.md#完全平方数) [279](https://leetcode-cn.com/problems/perfect-squares)
-6. [单词拆分](动规.md#单词拆分) [139](https://leetcode-cn.com/problems/word-break) 记忆化 / dp
+6. [单词拆分](动规.md#单词拆分) [139](https://leetcode-cn.com/problems/word-break) memo / dp
 
 ### 打家劫舍
+1. [打家劫舍](动规.md#打家劫舍) [198](https://leetcode-cn.com/problems/house-robber)
+2. [打家劫舍 II](动规.md#打家劫舍-ii) [213](https://leetcode-cn.com/problems/house-robber-ii)
+3. [打家劫舍 III](动规.md#打家劫舍-iii) [337](https://leetcode-cn.com/problems/house-robber-iii) memo / dp
 
 ### 股票问题
+1. [买卖股票的最佳时机](动规.md#买卖股票的最佳时机) [121](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock)
+2. [买卖股票的最佳时机 II](动规.md#买卖股票的最佳时机-ii) [122](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii)
+3. [买卖股票的最佳时机 III](动规.md#买卖股票的最佳时机-iii) [123](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iii) TODO
+4. [买卖股票的最佳时机 IV](动规.md#买卖股票的最佳时机-iv) [188](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-iv) TODO
+5. [买卖股票的最佳时机含手续费](动规.md#买卖股票的最佳时机含手续费) [714](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-with-transaction-fee) TODO
 
 ### 子序列问题
-
 不连续子序列
+1. [最长递增子序列](动规.md#最长递增子序列) [300](https://leetcode-cn.com/problems/longest-increasing-subsequence)
+2. [最长公共子序列](动规.md#最长公共子序列) [1143](https://leetcode-cn.com/problems/longest-common-subsequence)
+3. [不相交的线](动规.md#不相交的线) [1035](https://leetcode-cn.com/problems/uncrossed-lines)
 
 连续子序列
+1. [最长连续递增子序列](动规.md#最长连续递增子序列) [674](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence)
+2. [最长重复子数组](动规.md#最长重复子数组) [718](https://leetcode-cn.com/problems/maximum-length-of-repeated-subarray)
+3. [最大子序和](动规.md#最大子序和) [53](https://leetcode-cn.com/problems/maximum-subarray)
 
 编辑距离
+1. [判断子序列](动规.md#判断子序列) [392](https://leetcode-cn.com/problems/is-subsequence)
+2. [不同的子序列](动规.md#不同的子序列) [115](https://leetcode-cn.com/problems/distinct-subsequences)
+3. [两个字符串的删除操作](动规.md#两个字符串的删除操作) [583](https://leetcode-cn.com/problems/delete-operation-for-two-strings)
+4. [编辑距离](动规.md#编辑距离) [72](https://leetcode-cn.com/problems/edit-distance)
 
 回文
+1. [回文子串](动规.md#回文子串) [647](https://leetcode-cn.com/problems/palindromic-substrings)
+2. [最长回文子序列](动规.md#最长回文子序列) [516](https://leetcode-cn.com/problems/longest-palindromic-subsequence)
 
 ---
 
